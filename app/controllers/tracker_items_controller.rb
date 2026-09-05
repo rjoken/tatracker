@@ -1,0 +1,2 @@
+class TrackerItemsController < ApplicationController
+end

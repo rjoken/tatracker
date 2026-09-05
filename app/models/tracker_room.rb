@@ -1,0 +1,2 @@
+class TrackerRoom < ApplicationRecord
+end
