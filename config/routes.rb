@@ -12,4 +12,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  patch "/:room_id/items/:id/increment",
+    to: "tracker_items#increment",
+    as: :increment_tracker_item
+
+  patch "/:room_id/items/:id/decrement",
+    to: "tracker_items#decrement",
+    as: :decrement_tracker_item
+
+  get "/:room_id",
+    to: "tracker_rooms#show",
+    as: :tracker_room
 end

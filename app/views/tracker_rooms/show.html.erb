@@ -1,2 +1,30 @@
-<h1>TrackerRooms#show</h1>
-<p>Find me in app/views/tracker_rooms/show.html.erb</p>
+<%= turbo_stream_from @tracker_room %>
+<div class="tracker <%= "tracker--viewer" if @mode == :viewer %>">
+    <div class="tracker-grid">
+        <% @items.each do |item| %>
+            <div class="tracker-item">
+                <%= render item %>
+
+                <% if @mode == :editor %>
+                    <div class="tracker-item__controls">
+                        <%= button_to "-", 
+                            decrement_tracker_item_path(
+                                item.tracker_room.slug, 
+                                item
+                            ), 
+                            method: :patch, 
+                            class: "tracker-button" %>
+
+                        <%= button_to "+", 
+                            increment_tracker_item_path(
+                                item.tracker_room.slug, 
+                                item
+                            ), 
+                            method: :patch, 
+                            class: "tracker-button" %>
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>

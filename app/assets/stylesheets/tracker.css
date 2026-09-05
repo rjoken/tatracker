@@ -1,0 +1,70 @@
+/* app/assets/stylesheets/tracker.css */
+
+body {
+  margin: 0;
+}
+
+.tracker {
+  min-height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #222;
+}
+
+.tracker--viewer {
+  background: #00ff00;
+}
+
+.tracker-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.tracker-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracker-item__visual {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.tracker-item__image {
+  width: 32px;
+  height: 32px;
+  max-width: none;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.tracker-item__value {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.tracker-item__controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.tracker-button {
+  width: 64px;
+  height: 48px;
+  font-size: 32px;
+}

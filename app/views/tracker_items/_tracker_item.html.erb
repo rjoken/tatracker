@@ -1,0 +1,27 @@
+<div id="<%= dom_id(tracker_item) %>" class="tracker-item__visual">
+    <%= image_tag tracker_item.image_name, class: "tracker-item__image" %>
+
+    <div class="tracker-item__value">
+        <%= tracker_item.value %>
+    </div>
+
+    <% if local_assigns[:mode] == :editor %>
+        <div class="tracker-item__controls">
+            <%= button_to "-", 
+                decrement_tracker_item_path(
+                    tracker_item.tracker_room.slug, 
+                    tracker_item
+                ), 
+                method: :patch, 
+                class: "tracker-button" %>
+
+            <%= button_to "+", 
+                increment_tracker_item_path(
+                    tracker_item.tracker_room.slug, 
+                    tracker_item
+                ), 
+                method: :patch, 
+                class: "tracker-button" %>
+        </div>
+    <% end %>
+</div>
