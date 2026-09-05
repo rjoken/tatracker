@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   overflow-x: auto;
+  overflow-y: auto;
 }
 
 .tracker-item {
@@ -59,12 +60,11 @@ body {
 .tracker-item__controls {
   display: flex;
   justify-content: center;
-  gap: 16px;
   margin-top: 12px;
 }
 
 .tracker-button {
-  width: 64px;
-  height: 48px;
-  font-size: 32px;
+  width: 48px;
+  height: 32px;
+  font-size: 24px;
 }
