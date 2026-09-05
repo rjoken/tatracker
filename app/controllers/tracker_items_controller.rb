@@ -7,7 +7,7 @@ class TrackerItemsController < ApplicationController
       @tracker_item.update!(value: @tracker_item.value + 1)
     end
 
-    head :no_content
+    render turbo_stream: turbo_stream.replace(@tracker_item, partial: "tracker_items/tracker_item", locals: { tracker_item: @tracker_item })
   end
 
   def decrement
@@ -15,7 +15,7 @@ class TrackerItemsController < ApplicationController
       @tracker_item.update!(value: [ @tracker_item.value - 1, 0 ].max)
     end
 
-    head :no_content
+    render turbo_stream: turbo_stream.replace(@tracker_item, partial: "tracker_items/tracker_item", locals: { tracker_item: @tracker_item })
   end
 
   private

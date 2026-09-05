@@ -8,7 +8,19 @@ class TrackerRoomsController < ApplicationController
 
   def reset
     @tracker_room = TrackerRoom.find_by!(slug: params[:room_id])
-    @tracker_room.tracker_items.update_all(value: 0)
-    head :no_content
+
+    items = @tracker_room.tracker_items.order(:position)
+
+    items.each do |item|
+      item.update!(value: 0)
+    end
+
+    render turbo_stream: items.map { |item|
+      turbo_stream.replace(
+        item,
+        partial: "tracker_items/tracker_item",
+        locals: { tracker_item: item }
+      )
+    }
   end
 end

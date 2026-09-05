@@ -27,4 +27,10 @@
             </div>
         <% end %>
     </div>
+
+    <% if @mode == :editor %>
+        <div class="tracker-actions">
+            <%= button_to "Reset", reset_tracker_room_path(@tracker_room.slug), method: :patch, class: "reset-button" %>
+        </div>
+    <% end %>
 </div>
