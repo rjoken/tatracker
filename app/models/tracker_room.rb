@@ -5,15 +5,47 @@ class TrackerRoom < ApplicationRecord
 
   after_create :create_default_items
 
+  COUNTER_IMAGES = [
+    "dragon.png",
+    "thunder.png",
+    "equip.png",
+    "widespread.png",
+    "dcj.png",
+    "megamorph.png",
+    "mbd.png"
+  ].freeze
+
+  PROGRESSION_STAGES = [
+    [ "Mountain", "mountain.png" ],
+    [ "Ocean", "sea.png" ],
+    [ "Desert", "desert.png" ],
+    [ "Meadow", "meadow.png" ],
+    [ "Forest", "forest.png" ],
+    [ "Final 6", "labmage.png" ]
+  ].freeze
+
   private
 
   def create_default_items
-    tracker_items.create(position: 0, image_name: "dragon.png", value: 0)
-    tracker_items.create(position: 1, image_name: "thunder.png", value: 0)
-    tracker_items.create(position: 2, image_name: "equip.png", value: 0)
-    tracker_items.create(position: 3, image_name: "widespread.png", value: 0)
-    tracker_items.create(position: 4, image_name: "dcj.png", value: 0)
-    tracker_items.create(position: 5, image_name: "megamorph.png", value: 0)
-    tracker_items.create(position: 6, image_name: "mbd.png", value: 0)
+    COUNTER_IMAGES.each_with_index do |image_name, position|
+      tracker_items.create!(
+        item_type: :counter,
+        position: position,
+        image_name: image_name,
+        value: 0,
+        completed: false
+      )
+    end
+
+    PROGRESSION_STAGES.each_with_index do |(stage_name, image_name), position|
+      tracker_items.create!(
+        item_type: :progression,
+        position: position,
+        image_name: image_name,
+        value: 0,
+        completed: false,
+        stage_name: stage_name
+      )
+    end
   end
 end

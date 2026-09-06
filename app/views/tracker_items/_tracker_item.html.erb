@@ -1,27 +1,52 @@
-<div id="<%= dom_id(tracker_item) %>" class="tracker-item__visual">
-    <%= image_tag tracker_item.image_name, class: "tracker-item__image" %>
+<div id="<%= dom_id(tracker_item) %>">
+    <% if tracker_item.item_type_counter? %>
+        <div class="tracker-item__visual">
+            <%= image_tag tracker_item.image_name, class: "tracker-item__image" %>
 
-    <div class="tracker-item__value">
-        <%= tracker_item.value %>
-    </div>
+            <div class="tracker-item__value">
+                <%= tracker_item.value %>
+            </div>
+        </div>
 
-    <% if local_assigns[:mode] == :editor %>
         <div class="tracker-item__controls">
-            <%= button_to "-", 
+            <%= button_to "-",
                 decrement_tracker_item_path(
-                    tracker_item.tracker_room.slug, 
+                    tracker_item.tracker_room.slug,
                     tracker_item
-                ), 
-                method: :patch, 
+                ),
+                method: :patch,
                 class: "tracker-button" %>
 
-            <%= button_to "+", 
+            <%= button_to "+",
                 increment_tracker_item_path(
-                    tracker_item.tracker_room.slug, 
+                    tracker_item.tracker_room.slug,
                     tracker_item
-                ), 
-                method: :patch, 
+                ),
+                method: :patch,
                 class: "tracker-button" %>
         </div>
+    <% else %>
+        <div class="tracker-item__visual">
+            <%= image_tag tracker_item.image_name,
+                class: [
+                    "tracker-item__image",
+                    (tracker_item.completed? ? "tracker-item__image--complete" : "tracker-item__image--incomplete")
+                ] %>
+        </div>
+
+        <%= form_with \
+            url: set_progression_tracker_item_path(tracker_item.tracker_room.slug, tracker_item), \
+            method: :patch, \
+            class: "tracker-item__progression-form", \
+            data: {
+              controller: "progression-checkbox",
+              progression_checkbox_completed_value: tracker_item.completed?
+            } do %>
+            <%= hidden_field_tag :completed, "0" %>
+            <label class="tracker-item__checkbox-label">
+                <%= check_box_tag :completed, "1", tracker_item.completed?, onchange: "this.form.requestSubmit()", data: { progression_checkbox_target: "checkbox" } %>
+                <span><%= tracker_item.stage_name %></span>
+            </label>
+        <% end %>
     <% end %>
 </div>

@@ -1,32 +1,24 @@
 <%= turbo_stream_from @tracker_room %>
-<div class="tracker <%= "tracker--viewer" if @mode == :viewer %>">
-    <div class="tracker-grid">
-        <% @items.each do |item| %>
-            <div class="tracker-item">
-                <%= render item %>
+<div class="tracker <%= "tracker--editor" if @mode == :editor %> <%= "tracker--viewer" if @mode == :viewer %> <%= "tracker--progression" if @mode == :progression %>">
+    <% if @mode == :editor || @mode == :viewer %>
+        <div class="tracker-grid">
+            <% @counter_items.each do |item| %>
+                <div class="tracker-item">
+                    <%= render partial: "tracker_items/tracker_item", locals: { tracker_item: item, mode: @mode } %>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
 
-                <% if @mode == :editor %>
-                    <div class="tracker-item__controls">
-                        <%= button_to "-", 
-                            decrement_tracker_item_path(
-                                item.tracker_room.slug, 
-                                item
-                            ), 
-                            method: :patch, 
-                            class: "tracker-button" %>
-
-                        <%= button_to "+", 
-                            increment_tracker_item_path(
-                                item.tracker_room.slug, 
-                                item
-                            ), 
-                            method: :patch, 
-                            class: "tracker-button" %>
-                    </div>
-                <% end %>
-            </div>
-        <% end %>
-    </div>
+    <% if @mode == :editor || @mode == :progression %>
+        <div class="tracker-grid tracker-grid--progression">
+            <% @progression_items.each do |item| %>
+                <div class="tracker-item">
+                    <%= render partial: "tracker_items/tracker_item", locals: { tracker_item: item, mode: @mode } %>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
 
     <% if @mode == :editor %>
         <div class="tracker-actions">

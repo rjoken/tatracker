@@ -21,6 +21,10 @@ Rails.application.routes.draw do
     to: "tracker_items#decrement",
     as: :decrement_tracker_item
 
+  patch "/:room_id/items/:id/progression",
+    to: "tracker_items#set_progression",
+    as: :set_progression_tracker_item
+
   patch "/:room_id/reset",
     to: "tracker_rooms#reset",
     as: :reset_tracker_room

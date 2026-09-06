@@ -15,6 +15,10 @@ body {
   background: #757d00;
 }
 
+.tracker--progression {
+  background: #757d00;
+}
+
 .tracker-grid {
   display: flex;
   flex-wrap: nowrap;
@@ -62,6 +66,26 @@ body {
   margin-top: 12px;
 }
 
+.tracker-item__progression-form {
+  margin-top: 8px;
+}
+
+.tracker-item__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.tracker-item__image--incomplete {
+  filter: grayscale(1) brightness(0.65);
+}
+
+.tracker-item__image--complete {
+  filter: none;
+}
+
 .tracker-button {
   width: 48px;
   height: 32px;
@@ -78,4 +102,16 @@ body {
   width: fit-content;
   max-width: 100%;
   margin: 16px auto 0;
+}
+
+.tracker-grid--progression {
+  margin-top: 20px;
+  gap: 1px;
+}
+
+.tracker--viewer .tracker-item__controls,
+.tracker--viewer .tracker-item__progression-form,
+.tracker--progression .tracker-item__controls,
+.tracker--progression .tracker-item__progression-form {
+  display: none;
 }
