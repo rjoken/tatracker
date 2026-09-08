@@ -1,0 +1,41 @@
+{
+  "country": "nl",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "26"
+    },
+    {
+      "label": "Occupation",
+      "content": "Software Engineer"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Rhythm games, cycling"
+    },
+    {
+      "label": "Rival",
+      "content": "ThaRixer"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Duelists of the Roses, Pokemon Red"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Injection Fairy Lily"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 3, tatournament"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:22:00"
+    },
+    {
+      "label": "Favourite FM Category",
+      "content": "Vanilla manipless"
+    }
+  ]
+}

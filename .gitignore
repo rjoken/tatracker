@@ -35,7 +35,10 @@
 /config/*.key
 
 # Ignore database files
-/data
+# Ignore database files
+/data/*
+!/data/players/
+!/data/players/*.json
 
 
 /app/assets/builds/*
