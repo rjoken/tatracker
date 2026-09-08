@@ -7,12 +7,18 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
     get player_path(name: "hippochan")
 
     assert_response :success
-    assert_select "h1", text: /hippochan/
-    assert_select "h1 img[alt='nl']", count: 1
-    assert_select "header > img[alt='hippochan avatar']", count: 1
-    assert_select "section", count: 4
-    assert_select "section h2", count: 4
-    assert_select "section p", count: 4
+    assert_select "main.player-card--left", count: 1
+    assert_select ".player-card__name", "hippochan"
+    assert_select ".player-card__flag[alt='nl']", count: 1
+    assert_select ".player-card__avatar[alt='hippochan avatar']", count: 1
+    assert_select ".player-card__factoid", count: 4
+  end
+
+  test "reverses the identity display on the right side" do
+    get player_path(name: "hippochan", side: "right")
+
+    assert_response :success
+    assert_select "main.player-card--right", count: 1
   end
 
   test "returns not found when the player file does not exist" do

@@ -1,0 +1,76 @@
+.player-card {
+  width: min(48rem, calc(100% - 2rem));
+  box-sizing: border-box;
+  border: 6px solid #c9a227;
+  border-radius: 0;
+  color: #fff;
+  background: linear-gradient(to bottom, rgb(48 48 48 / 80%), rgb(0 0 0 / 80%));
+  text-align: center;
+}
+
+.player-card__identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-bottom: 2px solid #c9a227;
+}
+
+.player-card--right .player-card__identity {
+  flex-direction: row-reverse;
+}
+
+.player-card--right .player-card__avatar {
+  transform: scaleX(-1);
+}
+
+.player-card__avatar {
+  width: 128px;
+  height: 128px;
+  flex: 0 0 128px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.player-card__name {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 0;
+}
+
+.player-card__flag {
+  width: 64px;
+  height: auto;
+  flex: 0 0 auto;
+  image-rendering: pixelated;
+}
+
+.player-card__factoids {
+  display: grid;
+  gap: 2.5rem;
+  padding: 3rem;
+}
+
+.player-card__factoid h2 {
+  margin: 0 0 0.7rem;
+  color: #fff2a8;
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+
+.player-card__factoid p {
+  margin: 0;
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media (max-width: 30rem) {
+  .player-card__identity {
+    gap: 1.5rem;
+  }
+
+  .player-card__name {
+    font-size: 3rem;
+  }
+}

@@ -9,6 +9,7 @@ class PlayersController < ApplicationController
     @player_name = file_path.basename(".json").to_s
     @country = player.fetch("country")
     @items = player.fetch("factoids").sample(4)
+    @side = params[:side] == "right" ? "right" : "left"
 
     avatar_path = Rails.root.glob("app/assets/images/avatars/#{@player_name}.*").first
     @avatar = "avatars/#{avatar_path.basename}" if avatar_path

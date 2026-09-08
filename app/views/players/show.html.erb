@@ -1,15 +1,16 @@
-<header>
-  <h1>
-    <%= @player_name %>
-    <%= image_tag "flags/#{@country}.png", alt: @country, height: 24 %>
-  </h1>
+<main class="player-card player-card--<%= @side %>">
+  <header class="player-card__identity">
+    <%= image_tag @avatar, alt: "#{@player_name} avatar", class: "player-card__avatar" if @avatar %>
+    <h1 class="player-card__name"><%= @player_name %></h1>
+    <%= image_tag "flags/#{@country}.png", alt: @country, class: "player-card__flag" %>
+  </header>
 
-  <%= image_tag @avatar, alt: "#{@player_name} avatar" if @avatar %>
-</header>
-
-<% @items.each do |item| %>
-  <section>
-    <h2><%= item.fetch("label") %></h2>
-    <p><%= item.fetch("content") %></p>
-  </section>
-<% end %>
+  <div class="player-card__factoids">
+    <% @items.each do |item| %>
+      <section class="player-card__factoid">
+        <h2><%= item.fetch("label") %></h2>
+        <p><%= item.fetch("content") %></p>
+      </section>
+    <% end %>
+  </div>
+</main>
