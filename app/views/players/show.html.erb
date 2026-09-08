@@ -1,0 +1,15 @@
+<header>
+  <h1>
+    <%= @player_name %>
+    <%= image_tag "flags/#{@country}.png", alt: @country, height: 24 %>
+  </h1>
+
+  <%= image_tag @avatar, alt: "#{@player_name} avatar" if @avatar %>
+</header>
+
+<% @items.each do |item| %>
+  <section>
+    <h2><%= item.fetch("label") %></h2>
+    <p><%= item.fetch("content") %></p>
+  </section>
+<% end %>

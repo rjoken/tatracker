@@ -29,6 +29,10 @@ Rails.application.routes.draw do
     to: "tracker_rooms#reset",
     as: :reset_tracker_room
 
+  get "/player/:name",
+    to: "players#show",
+    as: :player
+
   get "/:room_id",
     to: "tracker_rooms#show",
     as: :tracker_room
