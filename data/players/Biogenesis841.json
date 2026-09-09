@@ -1,0 +1,25 @@
+{
+  "country": "gb",
+  "factoids": [
+    {
+      "label": "Other Speedruns",
+      "content": "Resident Evil"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Blue-Eyes White Dragon"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "First time!"
+    },
+    {
+      "label": "15-card PB",
+      "content": "No PB yet!"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
+}

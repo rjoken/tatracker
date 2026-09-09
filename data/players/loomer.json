@@ -1,0 +1,41 @@
+{
+  "country": "us",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "33"
+    },
+    {
+      "label": "Occupation",
+      "content": "Food Safety Auditor"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Movies, Tennis, Travel"
+    },
+    {
+      "label": "Rival",
+      "content": "matt13"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Dark Souls 3 , Elden Ring"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Buster Blader"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 4 Runner-up, Brazil vs World 2"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:17:23"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
+}

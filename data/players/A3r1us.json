@@ -1,0 +1,33 @@
+{
+  "country": "fr",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "35"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Cycling, Mahjong, RetroAchievements"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Fisherman's Bait 2, Plok, Goemon 3, Puyo Puyo 2."
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Dark Hole"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Tatournament, Season 1-4"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:09:50"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Vanilla manipless"
+    }
+  ]
+}

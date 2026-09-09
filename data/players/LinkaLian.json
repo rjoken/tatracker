@@ -1,0 +1,33 @@
+{
+  "country": "england",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "33"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Retro Gaming & Being a Cool Dad"
+    },
+    {
+      "label": "Rival",
+      "content": "Alfarg/Umi/Tato"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Celtic Guardian"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Duelist Kingdom, Season 1, Season 3, Duelist of Destiny, Tatotournament"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:30:40"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "World Tournament"
+    }
+  ]
+}

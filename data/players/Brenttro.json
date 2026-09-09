@@ -1,0 +1,41 @@
+{
+  "country": "us",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": ":( 31"
+    },
+    {
+      "label": "Occupation",
+      "content": "Ex-Software Engineer"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Gaming, being a cat-dad"
+    },
+    {
+      "label": "Rival",
+      "content": "Yu-Gi-Oh! Forbidden Memories"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Frogger: He's Back!"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Hungry Burger"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 3, 4, 5, Brazil vs. World II"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:12:00"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "All Duelists"
+    }
+  ]
+}

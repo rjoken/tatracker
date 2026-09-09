@@ -1,0 +1,41 @@
+{
+  "country": "do",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "30"
+    },
+    {
+      "label": "Occupation",
+      "content": "Freelancer"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Recreational sports"
+    },
+    {
+      "label": "Rival",
+      "content": "El Flopsie"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Skyrim"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Perfectly Ultimate Great Moth"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 3 and Tatotournament 1"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:28:22"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "country": "se",
+  "factoids": [
+    {
+      "label": "Hobbies",
+      "content": "Crafting, Dancing, Running, Gaming, Reading"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Bob The Builder, Bug's Life, Yu-Gi-Oh! Shovelware"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Treeborn Frog"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:13:05"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Vanilla manipless"
+    }
+  ]
+}

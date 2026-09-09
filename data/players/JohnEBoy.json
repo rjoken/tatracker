@@ -1,0 +1,41 @@
+{
+  "country": "us",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "32"
+    },
+    {
+      "label": "Occupation",
+      "content": "Graphic Designer/Post Production"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Drawing, video editing"
+    },
+    {
+      "label": "Rival",
+      "content": "Flopsie"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Spyro 2, Aladdin (SNES), Final Fantasy 4, Pokemon TCG"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Black Luster Soldier"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Tatournament"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:18:46"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
+}

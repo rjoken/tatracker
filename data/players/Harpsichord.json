@@ -1,0 +1,37 @@
+{
+  "country": "us",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "23"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Weight-Lifting, Reading, Sports (primarily Baseball)"
+    },
+    {
+      "label": "Rival",
+      "content": "Flopsie"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Learning Crash Bash & CTR."
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Curse of Dragon"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 4"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:24:50"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "All Duelists"
+    }
+  ]
+}

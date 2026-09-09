@@ -1,0 +1,37 @@
+{
+  "country": "us",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "Unc Tier"
+    },
+    {
+      "label": "Occupation",
+      "content": "State Employee"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Working out, questionable gacha games, Pokemon Go"
+    },
+    {
+      "label": "Rival",
+      "content": "Himself"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Crimson Sunbird"
+    },
+    {
+      "label": "Previous Tournament Appearences",
+      "content": "Season 5"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:20:36"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "15x15"
+    }
+  ]
+}
