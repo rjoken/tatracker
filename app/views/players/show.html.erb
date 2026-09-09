@@ -1,6 +1,6 @@
 <main class="player-card player-card--<%= @side %>">
   <header class="player-card__identity">
-    <%= image_tag @avatar, alt: "#{@player_name} avatar", class: "player-card__avatar" if @avatar %>
+    <%= image_tag @avatar, alt: "#{@player_name} avatar", class: "player-card__avatar", data: { dominant_avatar: true } if @avatar %>
     <h1 class="player-card__name"><%= @player_name %></h1>
     <%= image_tag "flags/#{@country}.png", alt: @country, class: "player-card__flag" %>
   </header>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= javascript_importmap_tags %>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+      }
+
+      img {
+        display: block;
+        image-rendering: pixelated;
+        box-sizing: border-box;
+        border: 4px solid #888;
+      }
+    </style>
+  </head>
+  <body>
+    <%= image_tag @avatar, alt: params[:name], width: @scale, height: @scale, data: { dominant_avatar: true } %>
+  </body>
+</html>

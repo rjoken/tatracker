@@ -33,6 +33,14 @@ Rails.application.routes.draw do
     to: "players#show",
     as: :player
 
+  get "/avatar/:name",
+    to: "avatars#show",
+    as: :avatar
+
+  get "/flag/:name",
+    to: "flags#show",
+    as: :flag
+
   get "/:room_id",
     to: "tracker_rooms#show",
     as: :tracker_room

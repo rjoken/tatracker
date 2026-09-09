@@ -31,6 +31,8 @@
   flex: 0 0 128px;
   object-fit: cover;
   image-rendering: pixelated;
+  box-sizing: border-box;
+  border: 4px solid #888;
 }
 
 .player-card__name {
