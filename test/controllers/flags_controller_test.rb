@@ -12,6 +12,13 @@ class FlagsControllerTest < ActionDispatch::IntegrationTest
     assert_select "img[height]", count: 0
   end
 
+  test "matches the player file regardless of case" do
+    get flag_path(name: "HippoChan")
+
+    assert_response :success
+    assert_select "img[alt='nl']", count: 1
+  end
+
   test "returns not found when player file does not exist" do
     get flag_path(name: "missing")
 

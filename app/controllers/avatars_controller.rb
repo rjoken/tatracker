@@ -1,14 +1,14 @@
 class AvatarsController < ApplicationController
-  def show
-    name = params[:name].to_s
-    raise ActionController::RoutingError, "Not Found" unless name.match?(/\A[a-zA-Z0-9_-]+\z/)
+  include PlayerLookup
 
+  def show
     scale = Integer(params[:scale], exception: false)
     @scale = [[scale || 64, 1].max, 1024].min
 
-    avatar_path = Rails.root.glob("app/assets/images/avatars/#{name}.*").first
+    avatar_path = avatar_file(requested_name)
     raise ActionController::RoutingError, "Not Found" unless avatar_path
 
+    @player_name = avatar_path.basename(avatar_path.extname).to_s
     @avatar = "avatars/#{avatar_path.basename}"
     render layout: false
   end

@@ -18,6 +18,13 @@ class AvatarsControllerTest < ActionDispatch::IntegrationTest
     assert_select "img[alt='hippochan'][width='64'][height='64']", count: 1
   end
 
+  test "matches the avatar regardless of case" do
+    get avatar_path(name: "HippoChan")
+
+    assert_response :success
+    assert_select "img[alt='hippochan']", count: 1
+  end
+
   test "returns not found when avatar does not exist" do
     get avatar_path(name: "missing")
 

@@ -12,5 +12,8 @@
         <p><%= item.fetch("content") %></p>
       </section>
     <% end %>
+    <% if @items.empty? %>
+      <h2>This player is very mysterious!</h2>
+    <% end %>
   </div>
 </main>

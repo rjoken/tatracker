@@ -1,9 +1,10 @@
 class PlayersController < ApplicationController
-  def show
-    name = params[:name].to_s
-    raise ActionController::RoutingError, "Not Found" unless name.match?(/\A[a-zA-Z0-9_-]+\z/)
+  include PlayerLookup
 
-    file_path = Rails.root.join("data", "players", "#{name}.json")
+  def show
+    file_path = player_file(requested_name)
+    raise ActionController::RoutingError, "Not Found" unless file_path
+
     player = JSON.parse(File.read(file_path))
 
     @player_name = file_path.basename(".json").to_s
@@ -11,9 +12,7 @@ class PlayersController < ApplicationController
     @items = player.fetch("factoids").sample(4)
     @side = params[:side] == "right" ? "right" : "left"
 
-    avatar_path = Rails.root.glob("app/assets/images/avatars/#{@player_name}.*").first
+    avatar_path = avatar_file(@player_name)
     @avatar = "avatars/#{avatar_path.basename}" if avatar_path
-  rescue Errno::ENOENT
-    raise ActionController::RoutingError, "Not Found"
   end
 end

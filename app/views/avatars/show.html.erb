@@ -20,6 +20,6 @@
     </style>
   </head>
   <body>
-    <%= image_tag @avatar, alt: params[:name], width: @scale, height: @scale, data: { dominant_avatar: true } %>
+    <%= image_tag @avatar, alt: @player_name, width: @scale, height: @scale, data: { dominant_avatar: true } %>
   </body>
 </html>

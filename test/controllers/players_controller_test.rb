@@ -21,6 +21,13 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
     assert_select "main.player-card--right", count: 1
   end
 
+  test "matches the player file regardless of case" do
+    get player_path(name: "HippoChan")
+
+    assert_response :success
+    assert_select ".player-card__name", "hippochan"
+  end
+
   test "returns not found when the player file does not exist" do
     get player_path(name: "missing")
 

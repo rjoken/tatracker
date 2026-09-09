@@ -1,19 +1,18 @@
 class FlagsController < ApplicationController
+  include PlayerLookup
+
   def show
-    name = params[:name].to_s
-    raise ActionController::RoutingError, "Not Found" unless name.match?(/\A[a-zA-Z0-9_-]+\z/)
+    file_path = player_file(requested_name)
+    raise ActionController::RoutingError, "Not Found" unless file_path
 
-    file_path = Rails.root.join("data", "players", "#{name}.json")
     player = JSON.parse(File.read(file_path))
-
     country = player.fetch("country")
-    flag_path = Rails.root.join("app", "assets", "images", "flags", "#{country}.png")
-    raise ActionController::RoutingError, "Not Found" unless flag_path.exist?
+
+    flag_path = flag_file(country)
+    raise ActionController::RoutingError, "Not Found" unless flag_path
 
     @country = country
-    @flag = "flags/#{country}.png"
+    @flag = "flags/#{flag_path.basename}"
     render layout: false
-  rescue Errno::ENOENT
-    raise ActionController::RoutingError, "Not Found"
   end
 end
