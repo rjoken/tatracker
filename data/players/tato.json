@@ -1,41 +1,41 @@
 {
-  "country": "us",
+  "country": "ar",
   "factoids": [
     {
       "label": "Age",
-      "content": "33"
+      "content": "26"
     },
     {
       "label": "Occupation",
-      "content": "Food Safety Auditor"
+      "content": "Tournament Admin & Consulting"
     },
     {
       "label": "Hobbies",
-      "content": "Movies, Tennis, Travel"
+      "content": "Computor online games, drinking & amateur comedy"
     },
     {
       "label": "Rival",
-      "content": "matt13"
+      "content": "Empanada & abuelo"
     },
     {
       "label": "Other Speedruns",
-      "content": "Dark Souls 3 , Elden Ring"
+      "content": "Spore Cell Stage - Easy (former WR)"
     },
     {
       "label": "Favorite Card",
-      "content": "Buster Blader"
+      "content": "Ushi-oni"
     },
     {
       "label": "Previous Tournament Appearances",
-      "content": "Season 4 Runner-up, Brazil vs World 2"
+      "content": "Season 1 champion, 3rd place in Duelist Kingdom & Season 3"
     },
     {
       "label": "15-card PB",
-      "content": "1:17:23"
+      "content": "1:17:06"
     },
     {
       "label": "Favorite FM Category",
-      "content": "Any% 15 Card"
+      "content": "Vanilla manipless"
     }
   ]
 }

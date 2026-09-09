@@ -1,0 +1,41 @@
+{
+  "country": "gb",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "29"
+    },
+    {
+      "label": "Occupation",
+      "content": "Bar Supervisor"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Gaming, Music, WWE"
+    },
+    {
+      "label": "Rival",
+      "content": "Any FM runner who has had the FM 15 card record"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Crash Bash, Dragonball Z Budokai"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Red Eyes Black Dragon"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Seasons 2-5, FM BR vs world (2nd place), Tatotournament, Duelist Kingdom (2nd place)"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:22:45"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "15 Card Any% & 15x15 100%"
+    }
+  ]
+}

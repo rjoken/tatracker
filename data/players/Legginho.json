@@ -1,41 +1,37 @@
 {
-  "country": "gb",
+  "country": "de",
   "factoids": [
-    {
-      "label": "Occupation",
-      "content": "Teacher"
-    },
     {
       "label": "Age",
       "content": "32"
     },
     {
       "label": "Hobbies",
-      "content": "Speedrunning, football, travelling"
+      "content": "Football, Table Tennis and Gym"
     },
     {
       "label": "Rival",
-      "content": "Themancuniannightmare"
+      "content": "My Next Opponent"
     },
     {
       "label": "Other Speedruns",
-      "content": "Resident Evil"
+      "content": "Racing Games"
     },
     {
       "label": "Favorite Card",
-      "content": "Blue-Eyes White Dragon"
+      "content": "\"L\" Stands for \"Beast Fangs\""
     },
     {
       "label": "Previous Tournament Appearances",
-      "content": "First time!"
+      "content": "First Time!"
     },
     {
       "label": "15-card PB",
-      "content": "No PB yet!"
+      "content": "1:29:xx"
     },
     {
       "label": "Favorite FM Category",
-      "content": "Any% RNG Manip"
+      "content": "All Duelists"
     }
   ]
 }

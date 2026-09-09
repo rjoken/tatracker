@@ -1,41 +1,41 @@
 {
-  "country": "us",
+  "country": "gb",
   "factoids": [
     {
       "label": "Age",
-      "content": "33"
+      "content": "34"
     },
     {
       "label": "Occupation",
-      "content": "Food Safety Auditor"
+      "content": "Betting Shop Assistant"
     },
     {
       "label": "Hobbies",
-      "content": "Movies, Tennis, Travel"
+      "content": "Pokemon and D&D"
     },
     {
       "label": "Rival",
-      "content": "matt13"
+      "content": "Pegasus A-Tecs"
     },
     {
       "label": "Other Speedruns",
-      "content": "Dark Souls 3 , Elden Ring"
+      "content": "Pokemon, Kingdom Hearts 2, DK64"
     },
     {
       "label": "Favorite Card",
-      "content": "Buster Blader"
+      "content": "Dark Magician"
     },
     {
       "label": "Previous Tournament Appearances",
-      "content": "Season 4 Runner-up, Brazil vs World 2"
+      "content": "First time!"
     },
     {
       "label": "15-card PB",
-      "content": "1:17:23"
+      "content": "2:01:50"
     },
     {
       "label": "Favorite FM Category",
-      "content": "Any% 15 Card"
+      "content": "All Duelists"
     }
   ]
 }

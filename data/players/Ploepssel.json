@@ -1,0 +1,21 @@
+{
+  "country": "de",
+  "factoids": [
+    {
+      "label": "Favorite Card",
+      "content": "Jirai Gumo"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Duelist of Destiny; Tatournament, Gods of Speed 3(?), Paulos Champions League"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:22:19"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "any% without deck checks"
+    }
+  ]
+}

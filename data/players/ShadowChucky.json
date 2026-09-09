@@ -1,0 +1,21 @@
+{
+  "country": "de",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "29"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Star Boy"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:20:36"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "No THTD"
+    }
+  ]
+}

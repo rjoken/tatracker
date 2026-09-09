@@ -1,0 +1,25 @@
+{
+  "country": "ar",
+  "factoids": [
+    {
+      "label": "Rival",
+      "content": "EmpanadaDePollo"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Megazowler"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Season 5"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:18:56"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Vanilla manipless"
+    }
+  ]
+}
