@@ -2,6 +2,22 @@
   "country": "gb",
   "factoids": [
     {
+      "label": "Occupation",
+      "content": "Teacher"
+    },
+    {
+      "label": "Age",
+      "content": "32"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Speedrunning, football, travelling"
+    },
+    {
+      "label": "Rival",
+      "content": "Themancuniannightmare"
+    },
+    {
       "label": "Other Speedruns",
       "content": "Resident Evil"
     },
@@ -19,7 +35,7 @@
     },
     {
       "label": "Favorite FM Category",
-      "content": "Any% 15 Card"
+      "content": "Any% RNG Manip"
     }
   ]
 }
