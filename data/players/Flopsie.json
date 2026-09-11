@@ -1,4 +1,37 @@
 {
   "country": "us",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "31"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Guitar, playing games that make me mad"
+    },
+    {
+      "label": "Rival",
+      "content": "You"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Spyro 2"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Sea King Dragon"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Season 4, 5, Brazil vs. World 1/2"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:12:43"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "15x15"
+    }
+  ]
 }

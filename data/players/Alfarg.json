@@ -1,4 +1,37 @@
 {
   "country": "scotland",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "28"
+    },
+    {
+      "label": "Occupation",
+      "content": "IT Support"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Hiking, Old School Runescape"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Wacky Races: Starring Dastardly and Muttley"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Crimson Sunbird"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "2019 Tournament, 2020 Tournament, Duelist Kingdom, Season 1, Season 2 (1st), Season 3 (1st), Season 4, Tatournament, BR vs. World 2"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:10:42"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "15 Card Any%"
+    }
+  ]
 }

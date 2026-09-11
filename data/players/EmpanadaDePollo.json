@@ -1,4 +1,41 @@
 {
   "country": "ar",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "27"
+    },
+    {
+      "label": "Occupation",
+      "content": "Teacher"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Video games, go-karting, swimming"
+    },
+    {
+      "label": "Rival",
+      "content": "Abueloquique"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Resident Evil 3"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Turu-Purun"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Season 4"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:26:34"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
 }

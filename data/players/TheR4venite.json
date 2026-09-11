@@ -1,4 +1,17 @@
 {
   "country": "at",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Other Speedruns",
+      "content": "Kirby's Dream Land, A Link to the Past, Harry Potter and the Chamber of Secrets PC"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Duelists of Destiny, Tatournament"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:18:04"
+    }
+  ]
 }

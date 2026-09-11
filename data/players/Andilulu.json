@@ -1,4 +1,33 @@
 {
   "country": "de",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "34"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Speedruns, Yu-Gi-Oh! TCG, Jogging, Chess"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Harvest Moon, Megaman, Lufia II"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Skelgon"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Season 4, 5, Tatournament"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:15:42"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "All Duelists"
+    }
+  ]
 }
