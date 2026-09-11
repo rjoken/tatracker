@@ -1,4 +1,41 @@
 {
-  "country": "de",
-  "factoids": []
+  "country": "it",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "29"
+    },
+    {
+      "label": "Occupation",
+      "content": "Cybersecurity Professional"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Tennis, padel, aperitifs, singing"
+    },
+    {
+      "label": "Rival",
+      "content": "R4venite, Andilulu"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Peggle, Crash Bandicoot, Pekka Kana, Bugs Bunny"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Spike Seadra"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Tatournament (winner), supercup (winner)"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:21:38"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "5-card No THTD"
+    }
+  ]
 }
