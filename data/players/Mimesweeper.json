@@ -1,4 +1,37 @@
 {
   "country": "us",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "33-ish"
+    },
+    {
+      "label": "Occupation",
+      "content": "Business Investment Services"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Gym, other games"
+    },
+    {
+      "label": "Rival",
+      "content": "...Jeff"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Lesser Dragon"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "First time!"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:20:13"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Whichever one I'm not actively running"
+    }
+  ]
 }

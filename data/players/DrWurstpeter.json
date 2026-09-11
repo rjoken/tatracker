@@ -1,4 +1,41 @@
 {
   "country": "de",
-  "factoids": []
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "90s kid"
+    },
+    {
+      "label": "Occupation",
+      "content": "Clinical Procrastinator"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Long walks at the beach (there is no beach)"
+    },
+    {
+      "label": "Rival",
+      "content": "Andilulu"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Pokemon TCG"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Bracchio-raidus"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "Tatournament, BR vs. World, some Seasonals"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:13:15"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
 }

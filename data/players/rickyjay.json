@@ -1,4 +1,25 @@
 {
-  "country": "gb",
-  "factoids": []
+  "country": "england",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "36"
+    },
+    {
+      "label": "Hobbies",
+      "content": "MTG and Minecraft"
+    },
+    {
+      "label": "Rival",
+      "content": "Umi"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:36:30"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "All Duelists"
+    }
+  ]
 }
