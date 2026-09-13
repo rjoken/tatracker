@@ -1,0 +1,29 @@
+{
+  "country": "de",
+  "factoids": [
+    {
+      "label": "Rival",
+      "content": "Legginho"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Super Mario Kart"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Celtic Guardian"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "First time!"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:28:10"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% 15 Card"
+    }
+  ]
+}
