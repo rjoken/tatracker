@@ -1,7 +1,7 @@
 <div id="<%= dom_id(tracker_item) %>">
     <% if tracker_item.item_type_counter? %>
         <div class="tracker-item__visual">
-            <%= image_tag tracker_item.image_name, class: "tracker-item__image" %>
+            <%= image_tag tracker_item.sprite_image_name, class: "tracker-item__image" %>
 
             <div class="tracker-item__value">
                 <%= tracker_item.value %>
@@ -25,9 +25,23 @@
                 method: :patch,
                 class: "tracker-button" %>
         </div>
+    <% elsif tracker_item.item_type_toggle? %>
+        <div class="tracker-item__visual">
+            <%= image_tag tracker_item.sprite_image_name, class: "tracker-item__image" %>
+        </div>
+
+        <div class="tracker-item__controls">
+            <%= button_to "\u21c4",
+                toggle_raigeki_tracker_item_path(
+                    tracker_item.tracker_room.slug,
+                    tracker_item
+                ),
+                method: :patch,
+                class: "tracker-button" %>
+        </div>
     <% else %>
         <div class="tracker-item__visual">
-            <%= image_tag tracker_item.image_name,
+            <%= image_tag tracker_item.sprite_image_name,
                 class: [
                     "tracker-item__image",
                     (tracker_item.completed? ? "tracker-item__image--complete" : "tracker-item__image--incomplete")

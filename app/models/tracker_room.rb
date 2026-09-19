@@ -47,5 +47,17 @@ class TrackerRoom < ApplicationRecord
         stage_name: stage_name
       )
     end
+
+    create_toggle_item!
+  end
+
+  def create_toggle_item!
+    tracker_items.create!(
+      item_type: :toggle,
+      position: 0,
+      value: 0,
+      completed: false,
+      raigeki: true
+    )
   end
 end

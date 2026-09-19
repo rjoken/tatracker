@@ -34,6 +34,16 @@ class TrackerItemsController < ApplicationController
     render turbo_stream: turbo_stream.replace(@tracker_item, partial: "tracker_items/tracker_item", locals: { tracker_item: @tracker_item, mode: :editor })
   end
 
+  def toggle_raigeki
+    return head :unprocessable_entity unless @tracker_item.item_type_toggle?
+
+    @tracker_item.with_lock do
+      @tracker_item.update!(raigeki: !@tracker_item.raigeki)
+    end
+
+    render turbo_stream: turbo_stream.replace(@tracker_item, partial: "tracker_items/tracker_item", locals: { tracker_item: @tracker_item, mode: :editor })
+  end
+
   private
 
   def set_tracker_room

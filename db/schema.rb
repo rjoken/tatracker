@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_09_06_001000) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_19_120000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -162,6 +162,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_09_06_001000) do
     t.string "image_name"
     t.integer "item_type", default: 0, null: false
     t.integer "position"
+    t.boolean "raigeki", default: true
     t.string "stage_name"
     t.bigint "tracker_room_id", null: false
     t.datetime "updated_at", null: false

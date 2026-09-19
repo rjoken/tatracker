@@ -2,7 +2,7 @@
 <div class="tracker <%= "tracker--editor" if @mode == :editor %> <%= "tracker--viewer" if @mode == :viewer %> <%= "tracker--progression" if @mode == :progression %>">
     <% if @mode == :editor || @mode == :viewer %>
         <div class="tracker-grid">
-            <% @counter_items.each do |item| %>
+            <% (@counter_items + @toggle_items).each do |item| %>
                 <div class="tracker-item">
                     <%= render partial: "tracker_items/tracker_item", locals: { tracker_item: item, mode: @mode } %>
                 </div>

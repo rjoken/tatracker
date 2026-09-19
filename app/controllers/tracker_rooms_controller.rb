@@ -3,6 +3,7 @@ class TrackerRoomsController < ApplicationController
     @tracker_room = TrackerRoom.find_or_create_by!(slug: params[:room_id])
     @counter_items = @tracker_room.tracker_items.item_type_counter.order(:position)
     @progression_items = @tracker_room.tracker_items.item_type_progression.order(:position)
+    @toggle_items = @tracker_room.tracker_items.item_type_toggle.order(:position)
 
     @mode = case params[:mode]
     when "viewer"
@@ -20,8 +21,11 @@ class TrackerRoomsController < ApplicationController
     items = @tracker_room.tracker_items.order(:position)
 
     items.each do |item|
-      if item.item_type_progression?
+      case item.item_type.to_sym
+      when :progression
         item.update!(completed: false)
+      when :toggle
+        item.update!(raigeki: true)
       else
         item.update!(value: 0)
       end
