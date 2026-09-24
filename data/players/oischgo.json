@@ -1,0 +1,41 @@
+{
+  "country": "de",
+  "factoids": [
+    {
+      "label": "Age",
+      "content": "26"
+    },
+    {
+      "label": "Occupation",
+      "content": "Office Management Specialist"
+    },
+    {
+      "label": "Hobbies",
+      "content": "Gaming, Football, Music"
+    },
+    {
+      "label": "Rival",
+      "content": "Shadowchucky"
+    },
+    {
+      "label": "Other Speedruns",
+      "content": "Yugioh DotR & Yugioh Wheelie Breakers"
+    },
+    {
+      "label": "Favorite Card",
+      "content": "Penguin Soldier"
+    },
+    {
+      "label": "Previous Tournament Appearances",
+      "content": "First time!"
+    },
+    {
+      "label": "15-card PB",
+      "content": "1:34:27"
+    },
+    {
+      "label": "Favorite FM Category",
+      "content": "Any% No THTD"
+    }
+  ]
+}
